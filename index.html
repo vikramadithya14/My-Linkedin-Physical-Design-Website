@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2f1eb">
+    <meta name="description" content="Sai Vikram Adithya is a physical design methodology engineer at Intel, working across RTL-to-GDS flows, timing, and SoC implementation.">
+    <title>Sai Vikram Adithya — Physical Design &amp; Methodology</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="identity" href="#top" aria-label="Sai Vikram Adithya, home">
+        <span class="identity-mark" aria-hidden="true">SV</span>
+        <span class="identity-copy">
+          <strong>Sai Vikram Adithya</strong>
+          <span>Physical Design · Methodology</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#impact">Impact</a>
+        <a href="#projects">Projects</a>
+        <a href="#videos">Videos</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero page-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow light-eyebrow"><span class="status-dot"></span> PHYSICAL DESIGN ENGINEER <span class="eyebrow-divider">/</span> INTEL</p>
+          <h1 id="hero-title">Building better flows for the next generation of silicon.</h1>
+          <p class="hero-lede">I work at the intersection of physical design, timing closure, and methodology—helping IP and SoC teams make implementation flows more robust and efficient.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#experience">Explore my experience <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="assets/sai-vikram-adithya-resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="https://www.linkedin.com/in/sai-vikram-adithya-6961a4162/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-keywords" aria-label="Specialties">
+            <span>RTL-to-GDS</span>
+            <span>PPA · STA</span>
+            <span>3nm–7nm TSMC · Intel nodes</span>
+          </div>
+        </div>
+
+        <div class="flow-card" aria-label="Illustration of a physical design flow">
+          <div class="flow-card-top">
+            <span class="flow-kicker">METHOD / 001</span>
+            <span class="flow-live"><span></span> FLOW IN MOTION</span>
+          </div>
+          <div class="flow-visual">
+            <svg class="flow-lines" viewBox="0 0 600 430" role="img" aria-labelledby="flow-title flow-desc">
+              <title id="flow-title">Physical design flow illustration</title>
+              <desc id="flow-desc">A stylized chip connected by routing lines to implementation stages.</desc>
+              <defs>
+                <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#d7e8da" stroke-opacity=".12" stroke-width="1" />
+                </pattern>
+                <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#283a42" />
+                  <stop offset="1" stop-color="#1e3039" />
+                </linearGradient>
+              </defs>
+              <rect width="600" height="430" fill="url(#grid)" />
+              <g fill="none" stroke="#9bdb6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+                <path d="M75 85h92v44h65" />
+                <path d="M38 195h117v-20h77" />
+                <path d="M62 322h99v-42h71" />
+                <path d="M420 130h76V79h57" />
+                <path d="M420 205h102" />
+                <path d="M420 284h58v49h83" />
+                <path d="M302 77V45h75" opacity=".5" />
+                <path d="M302 352v39h74" opacity=".5" />
+              </g>
+              <g fill="#d8f5b7" stroke="#15252d" stroke-width="4">
+                <circle cx="75" cy="85" r="6" /><circle cx="38" cy="195" r="6" /><circle cx="62" cy="322" r="6" />
+                <circle cx="553" cy="79" r="6" /><circle cx="522" cy="205" r="6" /><circle cx="561" cy="333" r="6" />
+                <circle cx="377" cy="45" r="5" /><circle cx="376" cy="391" r="5" />
+              </g>
+              <g class="flow-labels" fill="#d9e1d9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1">
+                <text x="29" y="70">FLOORPLAN</text>
+                <text x="12" y="181">PLACEMENT</text>
+                <text x="37" y="308">CTS · ROUTE</text>
+                <text x="457" y="62">SIGNOFF</text>
+                <text x="484" y="190">STA</text>
+                <text x="473" y="359">PHYSICAL</text>
+                <text x="473" y="375">VERIFICATION</text>
+              </g>
+              <g transform="translate(229 126)">
+                <rect x="0" y="0" width="190" height="180" rx="12" fill="url(#chip)" stroke="#c5ed9c" stroke-width="2" />
+                <rect x="15" y="15" width="160" height="150" rx="6" fill="none" stroke="#a1bd9a" stroke-opacity=".45" />
+                <g stroke="#d8f5b7" stroke-width="3" opacity=".85">
+                  <path d="M-12 28h12M-12 58h12M-12 88h12M-12 118h12M-12 148h12" />
+                  <path d="M190 28h12M190 58h12M190 88h12M190 118h12M190 148h12" />
+                  <path d="M28 -12v12M58 -12v12M88 -12v12M118 -12v12M148 -12v12" />
+                  <path d="M28 180v12M58 180v12M88 180v12M118 180v12M148 180v12" />
+                </g>
+                <g fill="none" stroke="#a7d79b" stroke-width="1.4" opacity=".7">
+                  <path d="M40 48h38v28h32v-18h39" />
+                  <path d="M40 116h28v-20h27v30h54" />
+                  <path d="M98 33v16M120 94v22M60 77v18M145 61v18" />
+                </g>
+                <text x="95" y="93" text-anchor="middle" fill="#f5f4e9" font-family="ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="700" letter-spacing="3">PPA</text>
+                <text x="95" y="111" text-anchor="middle" fill="#b7c5bd" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" letter-spacing="1.5">IP · SOC · FLOW</text>
+              </g>
+            </svg>
+          </div>
+          <div class="flow-card-bottom">
+            <span>From floorplan</span><span class="flow-arrow" aria-hidden="true">⟶</span><span>To signoff</span>
+          </div>
+        </div>
+
+        <div class="hero-footnote"><span>01</span><span>PHYSICAL DESIGN, MADE MORE REPEATABLE</span><span class="footnote-line"></span></div>
+      </section>
+
+      <section class="proof-strip page-shell" aria-label="Profile highlights">
+        <div class="proof-item"><strong>5<span>+</span></strong><span>years in physical design<br>and verification</span></div>
+        <div class="proof-item"><strong>IP <span>&amp;</span> SoC</strong><span>block-level through<br>full-chip experience</span></div>
+        <div class="proof-item"><strong>3–7<span>nm</span></strong><span>TSMC nodes, plus<br>Intel process nodes</span></div>
+        <div class="proof-item proof-education"><strong>M.S.</strong><span>Electrical Engineering<br>San José State University</span></div>
+      </section>
+
+      <section class="content-section page-shell about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span>01</span> / ABOUT</p>
+          <h2 id="about-title">Good methodology gives great design room to move.</h2>
+        </div>
+        <div class="about-layout">
+          <figure class="about-portrait">
+            <img src="assets/sai-vikram-adithya-anime.jpg" width="161" height="200" loading="lazy" alt="Anime-inspired portrait of Sai Vikram Adithya, looking toward the viewer">
+            <figcaption><span>VISUAL PROFILE / 001</span><strong>Methodology · silicon · systems</strong></figcaption>
+            <span class="portrait-corner" aria-hidden="true">SV / PD</span>
+          </figure>
+          <div class="about-copy">
+            <p class="lead-copy">I’m a physical design methodology engineer at Intel with 5+ years of experience across block-level implementation, full-chip STA, physical verification, and SoC design.</p>
+            <p>My work spans the implementation journey—from floorplanning and placement through clock-tree synthesis, routing, timing analysis, and physical checks. I’m especially interested in the methods and automation that make those flows more robust, reusable, and easier for teams to improve.</p>
+            <p>I’ve worked across 3nm, 5nm, and 7nm TSMC technologies and Intel process nodes, and earned my M.S. in Electrical Engineering from San José State University.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section expertise-section" id="expertise" aria-labelledby="expertise-title">
+        <div class="page-shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow"><span>02</span> / EXPERTISE</p>
+              <h2 id="expertise-title">The details that make a flow work.</h2>
+            </div>
+            <p class="section-aside">Implementation, analysis, and automation—connected across the design cycle.</p>
+          </div>
+          <div class="expertise-grid">
+            <article class="expertise-card">
+              <span class="card-number">01</span>
+              <div class="expertise-icon" aria-hidden="true">⌗</div>
+              <h3>Physical design</h3>
+              <p>Block and SoC implementation with attention to congestion, design rules, and handoff.</p>
+              <ul class="skill-list"><li>Floorplanning</li><li>Power planning</li><li>Placement</li><li>CTS</li><li>Routing</li></ul>
+            </article>
+            <article class="expertise-card">
+              <span class="card-number">02</span>
+              <div class="expertise-icon" aria-hidden="true">◷</div>
+              <h3>Timing &amp; analysis</h3>
+              <p>Finding and resolving timing issues while accounting for variation and signal effects.</p>
+              <ul class="skill-list"><li>STA</li><li>Setup / hold</li><li>Useful skew</li><li>OCV · CPPR</li><li>Signal integrity</li></ul>
+            </article>
+            <article class="expertise-card">
+              <span class="card-number">03</span>
+              <div class="expertise-icon" aria-hidden="true">⌘</div>
+              <h3>Methodology &amp; automation</h3>
+              <p>Improving RTL-to-GDS flows through regression, reusable methods, and practical automation.</p>
+              <ul class="skill-list"><li>RTL-to-GDS</li><li>Tcl scripting</li><li>Linux</li><li>CAD automation</li><li>IP / SoC handoff</li></ul>
+            </article>
+            <article class="expertise-card">
+              <span class="card-number">04</span>
+              <div class="expertise-icon" aria-hidden="true">◈</div>
+              <h3>Physical verification</h3>
+              <p>Checking implementation quality and resolving physical design issues before handoff.</p>
+              <ul class="skill-list"><li>DRC · DRV</li><li>Shorts / opens</li><li>Parasitic extraction</li><li>Signoff checks</li></ul>
+            </article>
+          </div>
+          <div class="tool-stack" aria-label="Tools and scripting languages">
+            <span class="tool-stack-label">TOOLS &amp; SCRIPTING</span>
+            <div class="tool-stack-list"><span>Synopsys DSO.ai · ICC2 · Fusion Compiler · Design Compiler · PrimeTime</span><span>Cadence Innovus · Genus</span><span>RedHawk · Conformal · Formality</span><span>Tcl · Perl · Python · Shell</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-section content-section" id="impact" aria-labelledby="impact-title">
+        <div class="page-shell">
+          <div class="section-heading section-heading-row impact-heading">
+            <div>
+              <p class="eyebrow"><span>03</span> / SILICON IN THE WORLD</p>
+              <h2 id="impact-title">Physical design decisions travel beyond the die.</h2>
+            </div>
+            <p class="section-aside">A wider lens on the systems modern silicon helps make possible—and the engineering trade-offs behind them.</p>
+          </div>
+
+          <div class="impact-grid">
+            <article class="impact-card">
+              <div class="impact-art"><img src="assets/impact-ai.svg" width="720" height="440" loading="lazy" alt="Illustration of an advanced processor connected to data-center servers"></div>
+              <div class="impact-card-copy">
+                <p class="impact-overline"><span>01</span> / COMPUTE</p>
+                <h3>AI &amp; accelerated compute</h3>
+                <p>Dense compute makes demanding workloads possible. Timing, congestion, and power remain real implementation constraints as designs scale.</p>
+              </div>
+            </article>
+            <article class="impact-card">
+              <div class="impact-art"><img src="assets/impact-connected.svg" width="720" height="440" loading="lazy" alt="Illustration of a processor connecting edge devices and network systems"></div>
+              <div class="impact-card-copy">
+                <p class="impact-overline"><span>02</span> / CONNECTIVITY</p>
+                <h3>Connected systems</h3>
+                <p>Processors, sensors, and network hardware bring computing into everyday products, linking small devices to larger systems.</p>
+              </div>
+            </article>
+            <article class="impact-card">
+              <div class="impact-art"><img src="assets/impact-efficiency.svg" width="720" height="440" loading="lazy" alt="Illustration of a silicon package surrounded by power, performance, and area trade-off rings"></div>
+              <div class="impact-card-copy">
+                <p class="impact-overline"><span>03</span> / EFFICIENCY</p>
+                <h3>Performance per watt</h3>
+                <p>Area, power, and performance choices influence thermal limits and the amount of useful compute a system can deliver.</p>
+              </div>
+            </article>
+          </div>
+          <p class="impact-note"><span>THE ENGINEERING LENS</span> Physical design turns a logical design into a manufacturable layout, balancing timing, power, area, and implementation quality.</p>
+        </div>
+      </section>
+
+      <section class="content-section projects-section page-shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow"><span>04</span> / PROJECTS</p>
+            <h2 id="projects-title">Design work with real constraints.</h2>
+          </div>
+          <p class="section-aside">Selected projects from professional implementation work, university, and ASIC training.</p>
+        </div>
+
+        <div class="project-group-heading"><span>PROFESSIONAL WORK</span><span>PHYSICAL DESIGN · SOC · METHODOLOGY</span></div>
+        <div class="project-grid professional-project-grid">
+          <article class="project-card project-card-featured">
+            <div class="project-meta"><span>PROFESSIONAL · SOC</span><span>01</span></div>
+            <h3>High-frequency SoC partition implementation</h3>
+            <p>Handled physical implementation across two block-level partitions of approximately 3.6M and 500K transistors, with a 2GHz operating target, through place-and-route and tapeout work.</p>
+            <div class="project-result"><span>PARTITION SCALE</span><strong>3.6M + 500K</strong><small>transistors · 2GHz</small></div>
+            <ul class="project-tags"><li>SoC</li><li>Place &amp; Route</li><li>Timing</li></ul>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span>PROFESSIONAL · 5NM</span><span>02</span></div>
+            <h3>SoC block timing closure</h3>
+            <p>Worked through repeated timing and signoff iterations on an approximately 3.3M-transistor block at 1.8GHz, including ECOs and physical verification. Also supported full-chip timing calibration across RTL, P&amp;R, and methodology teams.</p>
+            <div class="project-result"><span>DESIGN SCOPE</span><strong>~3.3M transistors</strong><small>1.8GHz · 128 RP's</small></div>
+            <ul class="project-tags"><li>STA</li><li>ECO</li><li>Physical verification</li></ul>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span>PROFESSIONAL · IP</span><span>03</span></div>
+            <h3>Large-IP floorplanning and implementation</h3>
+            <p>Managed floorplan and manual-placement iterations for a complex block of approximately 4.6M gates and 30 macros, working across QoR, congestion, timing, IR, DRC/LVS, and ECO closure.</p>
+            <div class="project-result"><span>DESIGN SCOPE</span><strong>~4.6M gates</strong><small>30 macros · 707MHz · 72.3% utilization</small></div>
+            <ul class="project-tags"><li>Floorplanning</li><li>Placement</li><li>Signoff</li></ul>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span>PROFESSIONAL · DESIGN EXPLORATION</span><span>04</span></div>
+            <h3>AI-assisted design-space exploration</h3>
+            <p>Evaluated Synopsys DSO.ai on a complex block, exploring ML-driven PPA and QoR trade-offs alongside timing, design-rule, and physical-verification considerations.</p>
+            <div class="project-result"><span>FOCUS</span><strong>PPA · QoR trade-offs</strong><small>Design exploration · timing</small></div>
+            <ul class="project-tags"><li>DSO.ai</li><li>Machine learning</li><li>Physical design</li></ul>
+          </article>
+        </div>
+
+        <div class="project-group-heading academic-group"><span>ACADEMIC &amp; TRAINING PROJECTS</span><span>ASIC CMOS · RTL · MACHINE LEARNING</span></div>
+        <div class="project-grid academic-project-grid">
+          <article class="project-card academic-card">
+            <div class="project-meta"><span>ACADEMIC · ASIC CMOS</span><span>05</span></div>
+            <h3>29-tap symmetric FIR filter</h3>
+            <p>Designed a multiplier-efficient FIR filter for IQ signals. Targeted a 300MHz clock and achieved a three-cycle filter operation at a 100MHz sample rate, with 8.24 fixed-point output using Synopsys DesignWare and PrimeTime.</p>
+            <div class="project-result"><span>FILTER LATENCY</span><strong>3 cycles</strong><small>100MHz sample rate</small></div>
+            <ul class="project-tags"><li>ASIC</li><li>DSP</li><li>Synopsys</li></ul>
+          </article>
+          <article class="project-card academic-card">
+            <div class="project-meta"><span>ACADEMIC · COMPUTER ARCHITECTURE</span><span>06</span></div>
+            <h3>Five-stage pipelined MIPS processor</h3>
+            <p>Designed a five-stage pipeline for instruction execution and implemented the RISC processor RTL in Verilog HDL, then simulated the design in ModelSim.</p>
+            <div class="project-result"><span>IMPLEMENTATION</span><strong>5-stage pipeline</strong><small>Verilog · ModelSim</small></div>
+            <ul class="project-tags"><li>RTL</li><li>Verilog</li><li>Simulation</li></ul>
+          </article>
+          <article class="project-card academic-card">
+            <div class="project-meta"><span>ACADEMIC · MACHINE LEARNING</span><span>07</span></div>
+            <h3>AI4I predictive maintenance</h3>
+            <p>Built and compared KNN, logistic regression, decision tree, and random forest classification models, using feature selection and data analysis to evaluate predictive-maintenance results.</p>
+            <div class="project-result"><span>MODELS</span><strong>4 classifiers</strong><small>KNN · logistic · tree · forest</small></div>
+            <ul class="project-tags"><li>Python</li><li>Classification</li><li>Feature selection</li></ul>
+            <a class="project-link" href="https://github.com/vikramadithya5/AI4I2020-Predictive-Maintance" target="_blank" rel="noopener noreferrer">View project on GitHub <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card academic-card">
+            <div class="project-meta"><span>TRAINING · ASIC</span><span>08</span></div>
+            <h3>45nm AES physical design</h3>
+            <p>Worked on an Advanced Encryption Standard project during ASIC physical-design and verification training, applying implementation and physical-check fundamentals.</p>
+            <div class="project-result"><span>TECHNOLOGY</span><strong>45nm</strong><small>ASIC · verification</small></div>
+            <ul class="project-tags"><li>AES</li><li>Physical design</li><li>Verification</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="video-section content-section" id="videos" aria-labelledby="videos-title">
+        <div class="page-shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow"><span>05</span> / DESIGN NOTES</p>
+              <h2 id="videos-title">Physical design, explained in motion.</h2>
+            </div>
+            <p class="section-aside">A space for short walkthroughs, visualizations, and practical lessons from the implementation flow.</p>
+          </div>
+
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-card-heading"><span>01 / FLOORPLAN</span><span>PD CONCEPT</span></div>
+              <div class="video-stage">
+                <video class="video-preview" controls playsinline preload="metadata" aria-label="Floorplanning and congestion video preview" hidden></video>
+                <div class="video-empty" aria-hidden="true"><span class="video-chip">PPA</span><span class="video-play">▶</span><span class="video-signal signal-one"></span><span class="video-signal signal-two"></span></div>
+                <div class="video-empty-label">Add a walkthrough to preview it here</div>
+              </div>
+              <div class="video-card-copy">
+                <h3>Floorplan &amp; congestion</h3>
+                <p>Show how utilization, macros, and blockages shape a block before detailed implementation.</p>
+                <label class="video-picker"><span>Choose a clip <span aria-hidden="true">＋</span></span><input class="video-file" type="file" accept="video/mp4,video/webm,video/quicktime" aria-label="Choose a floorplanning video"></label>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="video-card-heading"><span>02 / TIMING</span><span>PD CONCEPT</span></div>
+              <div class="video-stage">
+                <video class="video-preview" controls playsinline preload="metadata" poster="assets/setup-hold-poster.jpg" aria-label="Animated whiteboard lesson explaining setup and hold time">
+                  <source src="videos/setup-hold-timing.mp4" type="video/mp4">
+                  Your browser does not support embedded video.
+                </video>
+                <div class="video-empty" aria-hidden="true" hidden><span class="video-chip">CTS</span><span class="video-play">▶</span><span class="video-signal signal-one"></span><span class="video-signal signal-two"></span></div>
+                <div class="video-empty-label" hidden>Add a walkthrough to preview it here</div>
+              </div>
+              <div class="video-card-copy">
+                <h3>Setup &amp; hold, drawn on the board</h3>
+                <p>A 44-second animated lesson on sampling edges, timing windows, slack, clock skew, and common repairs.</p>
+                <label class="video-picker"><span>Preview another clip <span aria-hidden="true">＋</span></span><input class="video-file" type="file" accept="video/mp4,video/webm,video/quicktime" aria-label="Preview another timing video from this device"></label>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="video-card-heading"><span>03 / ROUTE</span><span>PD CONCEPT</span></div>
+              <div class="video-stage">
+                <video class="video-preview" controls playsinline preload="metadata" aria-label="Routing and signoff video preview" hidden></video>
+                <div class="video-empty" aria-hidden="true"><span class="video-chip">GDS</span><span class="video-play">▶</span><span class="video-signal signal-one"></span><span class="video-signal signal-two"></span></div>
+                <div class="video-empty-label">Add a walkthrough to preview it here</div>
+              </div>
+              <div class="video-card-copy">
+                <h3>Routing &amp; signoff</h3>
+                <p>Break down routing challenges, DRC cleanup, parasitics, and the final implementation checks.</p>
+                <label class="video-picker"><span>Choose a clip <span aria-hidden="true">＋</span></span><input class="video-file" type="file" accept="video/mp4,video/webm,video/quicktime" aria-label="Choose a routing and signoff video"></label>
+              </div>
+            </article>
+          </div>
+          <p class="video-footnote"><span>DESIGN NOTES</span> The timing slot now includes a setup-and-hold lesson. Pick a file to preview a different clip locally; follow the guide in <code>videos/</code> to publish more lessons with the site.</p>
+        </div>
+      </section>
+
+      <section class="content-section page-shell experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow"><span>06</span> / EXPERIENCE</p>
+            <h2 id="experience-title">A career built close to the silicon.</h2>
+          </div>
+          <p class="section-aside">From physical design implementation to methodology and flow improvement.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-entry current-entry">
+            <div class="timeline-date"><span>JUL 2024 — NOW</span><span class="current-status"><i></i> CURRENT</span></div>
+            <div class="timeline-main">
+              <div class="timeline-title-row"><div><h3>Physical Design Engineer</h3><p class="timeline-org">Intel Corporation <span>·</span> Methodology</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></div>
+              <p>Developing tools, flows, and methods for physical design across IP and SoC implementations. Focused on stronger RTL-to-GDS flows, regression, automation, and improvements to power, performance, area, and timing.</p>
+              <div class="timeline-tags"><span>Hillsboro, Oregon</span><span>IP &amp; SoC</span><span>Methodology</span></div>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">MAY 2023 — DEC 2023</div>
+            <div class="timeline-main">
+              <div class="timeline-title-row"><div><h3>Physical Design Graduate Intern</h3><p class="timeline-org">Intel Corporation</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></div>
+              <p>Evaluated Synopsys DSO.ai on a complex block for PPA and QoR trade-offs, supporting timing closure and physical verification. Also worked on ERC fixes, timing arcs, full-chip STA, and IR/RV checks for an Intel FPGA project.</p>
+              <div class="timeline-tags"><span>San José, California</span><span>Physical Design</span></div>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">JAN 2023 — JUL 2024</div>
+            <div class="timeline-main">
+              <div class="timeline-title-row"><div><h3>Graduate Teaching Associate</h3><p class="timeline-org">San José State University</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></div>
+              <p>Supported the continuous and discrete-time systems lab, using MATLAB, LTspice, and IPython to work through circuits and systems problems.</p>
+              <div class="timeline-tags"><span>Teaching</span><span>MATLAB</span><span>LTspice</span></div>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">SEP 2020 — AUG 2022</div>
+            <div class="timeline-main">
+              <div class="timeline-title-row"><div><h3>System-on-Chip Design Engineer</h3><p class="timeline-org">Intel Corporation</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></div>
+              <p>Implemented 3nm SoC partitions targeting 2GHz and supported timing closure on a 5nm, 1.8GHz block. Led full-chip timing calibration across RTL, P&amp;R, and methodology teams, and automated reporting with Tcl.</p>
+              <div class="timeline-tags"><span>Bengaluru, India</span><span>SoC Design</span></div>
+              <p class="timeline-recognition">Recognized multiple times for exceeding deliverables and expectations.</p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">DEC 2018 — AUG 2020</div>
+            <div class="timeline-main">
+              <div class="timeline-title-row"><div><h3>Physical Design Engineer</h3><p class="timeline-org">LakshSemi</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></div>
+              <p>Led floorplan iterations for a 4.6M-gate block with 30 macros, and supported timing, IR/RV, DRC/LVS, and ECO closure across 10nm and 7nm projects. Also handled a 90K-instance partition targeting 1GHz.</p>
+              <div class="timeline-tags"><span>Bengaluru, India</span><span>Physical Design</span></div>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">FEB 2018 — DEC 2018</div>
+            <div class="timeline-main">
+              <div class="timeline-title-row"><div><h3>Trainee Engineer</h3><p class="timeline-org">Entuple Technology</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></div>
+              <p>Trained in ASIC physical design and verification, including a 45nm Advanced Encryption Standard (AES) project.</p>
+              <div class="timeline-tags"><span>Bengaluru, India</span><span>ASIC · Verification</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="education-section" aria-labelledby="education-title">
+        <div class="page-shell education-layout">
+          <div>
+            <p class="eyebrow"><span>07</span> / EDUCATION</p>
+            <h2 id="education-title">Engineering foundations.<br>Silicon Valley perspective.</h2>
+          </div>
+          <div class="education-list">
+            <article class="education-item">
+              <span class="education-mark">MS</span>
+              <div><h3>Master of Science, Electrical Engineering · VLSI</h3><p>San José State University <span>·</span> 2022–2024</p><small>GPA 3.5 / 4.0 · VLSI · CAD</small></div>
+            </article>
+            <article class="education-item">
+              <span class="education-mark">BS</span>
+              <div><h3>B.Tech, Electronics and Communication Engineering</h3><p>MLR Institute of Technology · Jawaharlal Nehru Technological University, Hyderabad <span>·</span> 2014–2018</p><small>GPA 3.5 / 4.0 · Best Alumni Award, 2018</small></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section page-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow light-eyebrow"><span>08</span> / GET IN TOUCH</p>
+            <h2 id="contact-title">Let’s make the next flow better.</h2>
+            <p>For conversations about physical design, methodology, or SoC implementation, find me on LinkedIn.</p>
+          </div>
+          <a class="button button-lime contact-button" href="https://www.linkedin.com/in/sai-vikram-adithya-6961a4162/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          <span class="contact-orbit orbit-one" aria-hidden="true"></span><span class="contact-orbit orbit-two" aria-hidden="true"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-shell">
+      <a class="footer-name" href="#top">Sai Vikram Adithya <span>·</span> Physical Design</a>
+      <span>Built around better flows and better silicon.</span>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </footer>
+    <script>
+      const revealItems = document.querySelectorAll(".proof-item, .section-heading, .expertise-card, .impact-card, .project-card, .timeline-entry, .education-item, .about-portrait, .video-card, .contact-panel");
+      revealItems.forEach((item, index) => {
+        item.classList.add("reveal");
+        item.style.setProperty("--reveal-delay", `${(index % 4) * 75}ms`);
+      });
+
+      document.documentElement.classList.add("motion-ready");
+      const revealObserver = "IntersectionObserver" in window
+        ? new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: "0px 0px -36px 0px" })
+        : null;
+
+      document.querySelectorAll(".reveal").forEach((item) => {
+        if (revealObserver) revealObserver.observe(item);
+        else item.classList.add("is-visible");
+      });
+
+      document.querySelectorAll(".video-file").forEach((input) => {
+        const card = input.closest(".video-card");
+        const preview = card.querySelector(".video-preview");
+        const emptyState = card.querySelector(".video-empty");
+        const emptyLabel = card.querySelector(".video-empty-label");
+        let previewUrl = null;
+
+        input.addEventListener("change", () => {
+          const file = input.files && input.files[0];
+          if (!file) return;
+          input.value = "";
+          if (previewUrl) URL.revokeObjectURL(previewUrl);
+          previewUrl = URL.createObjectURL(file);
+          preview.src = previewUrl;
+          preview.hidden = false;
+          emptyState.hidden = true;
+          emptyLabel.hidden = true;
+          card.classList.add("has-video");
+          preview.load();
+        });
+      });
+    </script>
+  </body>
+</html>
