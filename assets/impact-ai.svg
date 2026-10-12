@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">Accelerated computing, illustrated</title>
+  <desc id="desc">A luminous silicon package connects through fine traces to a row of data-center servers.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#12262d"/><stop offset="1" stop-color="#284b47"/></linearGradient>
+    <linearGradient id="die" x2="1" y2="1"><stop stop-color="#344f4e"/><stop offset="1" stop-color="#142a32"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#c4ef8c" stop-opacity=".3"/><stop offset="1" stop-color="#c4ef8c" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#c5e9d2" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="720" height="440" fill="url(#bg)"/><rect width="720" height="440" fill="url(#grid)"/><ellipse cx="353" cy="227" rx="255" ry="205" fill="url(#glow)"/>
+  <g opacity=".58" stroke="#91bd9a" fill="#14272e">
+    <rect x="70" y="92" width="112" height="258" rx="8"/><rect x="194" y="62" width="112" height="288" rx="8"/><rect x="414" y="62" width="112" height="288" rx="8"/><rect x="538" y="92" width="112" height="258" rx="8"/>
+  </g>
+  <g fill="#98ba91" opacity=".6">
+    <path d="M86 112h80v42H86zM86 164h80v42H86zM86 216h80v42H86zM86 268h80v42H86zM210 82h80v42h-80zM210 134h80v42h-80zM210 186h80v42h-80zM210 238h80v42h-80zM430 82h80v42h-80zM430 134h80v42h-80zM430 186h80v42h-80zM430 238h80v42h-80zM554 112h80v42h-80zM554 164h80v42h-80zM554 216h80v42h-80zM554 268h80v42h-80z"/>
+  </g>
+  <g fill="none" stroke="#c4ef8c" stroke-width="2" opacity=".9"><path d="M182 126h92v46h61M182 253h69v-40h84M414 146h-56v32h-23M414 267h-61v-31h-24"/><path d="M306 92V53h-47M414 331h-46v35" opacity=".55"/></g>
+  <g fill="#def6c0"><circle cx="182" cy="126" r="4"/><circle cx="182" cy="253" r="4"/><circle cx="414" cy="146" r="4"/><circle cx="414" cy="267" r="4"/><circle cx="259" cy="53" r="4"/><circle cx="368" cy="366" r="4"/></g>
+  <g transform="translate(276 142)">
+    <rect width="168" height="156" rx="12" fill="#9dbc91" fill-opacity=".18" stroke="#d6f4b2" stroke-width="2"/>
+    <rect x="12" y="12" width="144" height="132" rx="7" fill="url(#die)" stroke="#8eb89a" stroke-opacity=".6"/>
+    <g stroke="#c4ef8c" stroke-width="3"><path d="M-12 28h12M-12 58h12M-12 88h12M-12 118h12M168 28h12M168 58h12M168 88h12M168 118h12M28-12v12M58-12v12M88-12v12M118-12v12M148-12v12M28 156v12M58 156v12M88 156v12M118 156v12M148 156v12"/></g>
+    <g fill="none" stroke="#a9d8a4" stroke-width="2" opacity=".86"><path d="M34 38h30v28h36V48h32M34 112h39V89h32v34h35M84 30v19M116 66v23M57 89v23M132 93v17"/></g>
+    <text x="84" y="84" fill="#f4f6ea" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">COMPUTE</text>
+  </g>
+</svg>

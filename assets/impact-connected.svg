@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">Connected systems, illustrated</title>
+  <desc id="desc">A central processor sends signals to stylized devices across a quiet, connected network.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#18333a"/><stop offset="1" stop-color="#314a4a"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#b9e68d" stop-opacity=".26"/><stop offset="1" stop-color="#b9e68d" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#d5edcf" fill-opacity=".24"/></pattern>
+  </defs>
+  <rect width="720" height="440" fill="url(#bg)"/><rect width="720" height="440" fill="url(#dots)"/><ellipse cx="362" cy="220" rx="320" ry="215" fill="url(#halo)"/>
+  <g fill="none" stroke="#a7d69e" stroke-width="2" opacity=".7"><path d="M186 118 293 177M181 318l112-61M534 114 427 177M537 320l-110-63"/><path d="M187 118c25 90 23 116-6 200M533 114c-24 89-23 117 4 206" stroke-dasharray="3 9" opacity=".6"/></g>
+  <g fill="#d8f5b7"><circle cx="186" cy="118" r="4"/><circle cx="181" cy="318" r="4"/><circle cx="534" cy="114" r="4"/><circle cx="537" cy="320" r="4"/></g>
+  <g transform="translate(300 153)">
+    <rect x="-8" y="-8" width="136" height="136" rx="16" fill="#bfe99a" fill-opacity=".11" stroke="#c4ef8c" stroke-width="2"/>
+    <rect x="7" y="7" width="106" height="106" rx="10" fill="#152b33" stroke="#8fbd96"/>
+    <g stroke="#c4ef8c" stroke-width="3"><path d="M-20 18h27M-20 45h27M-20 72h27M-20 99h27M113 18h27M113 45h27M113 72h27M113 99h27M18-20V7M45-20V7M72-20V7M99-20V7M18 113v27M45 113v27M72 113v27M99 113v27"/></g>
+    <g fill="none" stroke="#a9d8a4" stroke-width="2"><path d="M27 31h28v22h27M27 81h21V65h34v25h17"/><circle cx="59" cy="59" r="21" stroke-opacity=".5"/></g>
+    <circle cx="59" cy="59" r="4" fill="#e5f5cf"/>
+  </g>
+  <g fill="#172d34" stroke="#b4d49e" stroke-width="2">
+    <rect x="99" y="74" width="70" height="88" rx="12"/><rect x="92" y="279" width="81" height="71" rx="8"/><rect x="550" y="72" width="75" height="94" rx="11"/><rect x="544" y="276" width="83" height="75" rx="8"/>
+  </g>
+  <g fill="none" stroke="#8eb99a" stroke-width="2" opacity=".9">
+    <rect x="108" y="84" width="52" height="57" rx="5"/><circle cx="134" cy="151" r="3" fill="#c4ef8c"/>
+    <path d="M106 295h53v40h-53zM115 305h35M115 314h35M115 323h22"/>
+    <rect x="558" y="83" width="59" height="66" rx="4"/><circle cx="588" cy="158" r="3" fill="#c4ef8c"/>
+    <path d="M558 291h56v43h-56zM568 302h36M568 312h36M568 322h23"/>
+  </g>
+  <g fill="#d8edcb" font-family="Arial,sans-serif" font-size="10" letter-spacing="1.5" text-anchor="middle"><text x="134" y="184">EDGE</text><text x="133" y="372">SENSING</text><text x="588" y="188">NETWORK</text><text x="585" y="373">DEVICES</text></g>
+</svg>
