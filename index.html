@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f2f1eb">
+    <meta name="theme-color" content="#05070e">
     <meta name="description" content="Sai Vikram Adithya is a physical design methodology engineer at Intel, working across RTL-to-GDS flows, timing, and SoC implementation.">
     <title>Sai Vikram Adithya — Physical Design &amp; Methodology</title>
     <link rel="preload" as="image" href="assets/sai-vikram-adithya-anime.jpg?v=2">
@@ -11,6 +11,10 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
 
     <header class="site-header">
       <a class="identity" href="#top" aria-label="Sai Vikram Adithya, home">
@@ -35,7 +39,7 @@
       <section class="hero page-shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow light-eyebrow"><span class="status-dot"></span> PHYSICAL DESIGN ENGINEER <span class="eyebrow-divider">/</span> INTEL</p>
-          <h1 id="hero-title">Building better flows for the next generation of silicon.</h1>
+          <h1 id="hero-title">Engineering the <em>living circuitry</em> behind tomorrow.</h1>
           <p class="hero-lede">I work at the intersection of physical design, timing closure, and methodology—helping IP and SoC teams make implementation flows more robust and efficient.</p>
           <div class="hero-actions">
             <a class="button button-lime" href="#experience">Explore my experience <span aria-hidden="true">↓</span></a>
@@ -47,6 +51,7 @@
             <span>PPA · STA</span>
             <span>3nm–7nm TSMC · Intel nodes</span>
           </div>
+          <div class="hero-signal" aria-hidden="true"><span>SYS_READY</span><i></i><b>02:14:08</b></div>
         </div>
 
         <div class="flow-card" aria-label="Illustration of a physical design flow">
@@ -63,8 +68,8 @@
                   <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#d7e8da" stroke-opacity=".12" stroke-width="1" />
                 </pattern>
                 <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#283a42" />
-                  <stop offset="1" stop-color="#1e3039" />
+                  <stop offset="0" stop-color="#14204b" />
+                  <stop offset="1" stop-color="#070b20" />
                 </linearGradient>
               </defs>
               <rect width="600" height="430" fill="url(#grid)" />
@@ -485,6 +490,31 @@
         if (revealObserver) revealObserver.observe(item);
         else item.classList.add("is-visible");
       });
+
+      const header = document.querySelector(".site-header");
+      const scrollMeter = document.querySelector(".scroll-meter span");
+      const navLinks = [...document.querySelectorAll(".site-nav a[href^='#']")];
+      const sections = navLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+
+      const updateInterface = () => {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        scrollMeter.style.width = `${maxScroll ? (window.scrollY / maxScroll) * 100 : 0}%`;
+        header.classList.toggle("is-scrolled", window.scrollY > 18);
+      };
+      updateInterface();
+      window.addEventListener("scroll", updateInterface, { passive: true });
+
+      if ("IntersectionObserver" in window) {
+        const navObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
+          });
+        }, { rootMargin: "-38% 0px -55% 0px", threshold: 0 });
+        sections.forEach((section) => navObserver.observe(section));
+      }
 
       document.querySelectorAll(".video-file").forEach((input) => {
         const card = input.closest(".video-card");
