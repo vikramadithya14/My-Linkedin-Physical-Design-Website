@@ -24,6 +24,10 @@
           <span>Physical Design · Methodology</span>
         </span>
       </a>
+      <a class="intel-role-marker" href="#experience" aria-label="Sai Vikram Adithya currently works at Intel Corporation">
+        <span class="intel-role-chip" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span><strong>INTEL</strong><small>CURRENT ROLE</small></span>
+      </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
@@ -451,12 +455,26 @@
 
       <section class="contact-section page-shell" id="contact" aria-labelledby="contact-title">
         <div class="contact-panel">
-          <div>
+          <div class="contact-copy">
             <p class="eyebrow light-eyebrow"><span>08</span> / GET IN TOUCH</p>
-            <h2 id="contact-title">Let’s make the next flow better.</h2>
-            <p>For conversations about physical design, methodology, or SoC implementation, find me on LinkedIn.</p>
+            <h2 id="contact-title">Start a signal.</h2>
+            <p>Share a few details and I’ll review your note before deciding whether to continue the conversation.</p>
+            <a class="contact-linkedin" href="https://www.linkedin.com/in/sai-vikram-adithya-6961a4162/" target="_blank" rel="noopener noreferrer">Or connect on LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
-          <a class="button button-lime contact-button" href="https://www.linkedin.com/in/sai-vikram-adithya-6961a4162/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          <div class="contact-console">
+            <div class="console-heading"><span class="console-status" aria-hidden="true"></span><span>CONTACT CONSOLE</span><small>OPEN CHANNEL</small></div>
+            <form class="contact-form" data-endpoint="" novalidate>
+              <div class="contact-fields">
+                <label><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="Jane Smith" required></label>
+                <label><span>Phone number</span><input type="tel" name="phone" autocomplete="tel" placeholder="(555) 012-3456" required></label>
+                <label class="wide-field"><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="jane@company.com" required></label>
+                <label class="wide-field"><span>Purpose</span><select name="purpose" required><option value="" selected disabled>Select a reason</option><option>Professional opportunity</option><option>Physical design collaboration</option><option>Speaking or mentoring</option><option>Technical question</option><option>Other</option></select></label>
+                <label class="wide-field"><span>Your message <em>optional</em></span><textarea name="message" rows="3" placeholder="A brief note about what you would like to discuss."></textarea></label>
+              </div>
+              <button class="contact-submit" type="submit"><span>Send contact request</span><b aria-hidden="true">↗</b></button>
+              <p class="form-status" role="status" aria-live="polite">Your details are shared only when you send this request.</p>
+            </form>
+          </div>
           <span class="contact-orbit orbit-one" aria-hidden="true"></span><span class="contact-orbit orbit-two" aria-hidden="true"></span>
         </div>
       </section>
@@ -514,6 +532,38 @@
           });
         }, { rootMargin: "-38% 0px -55% 0px", threshold: 0 });
         sections.forEach((section) => navObserver.observe(section));
+      }
+
+      const contactForm = document.querySelector(".contact-form");
+      if (contactForm) {
+        const formStatus = contactForm.querySelector(".form-status");
+        contactForm.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          if (!contactForm.reportValidity()) return;
+
+          const endpoint = contactForm.dataset.endpoint;
+          if (!endpoint) {
+            formStatus.textContent = "Contact delivery is being configured. Please use LinkedIn for now.";
+            formStatus.classList.add("is-error");
+            return;
+          }
+
+          const submitButton = contactForm.querySelector("button[type='submit']");
+          submitButton.disabled = true;
+          formStatus.classList.remove("is-error");
+          formStatus.textContent = "Transmitting your request…";
+          try {
+            const response = await fetch(endpoint, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(contactForm) });
+            if (!response.ok) throw new Error("Delivery failed");
+            contactForm.reset();
+            formStatus.textContent = "Request received. Sai will reach out if there is a fit.";
+          } catch {
+            formStatus.textContent = "The request could not be sent. Please connect on LinkedIn instead.";
+            formStatus.classList.add("is-error");
+          } finally {
+            submitButton.disabled = false;
+          }
+        });
       }
 
       document.querySelectorAll(".video-file").forEach((input) => {
